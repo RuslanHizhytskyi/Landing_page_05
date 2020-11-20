@@ -1,10 +1,19 @@
 .bomb {
   &--title {
     margin-bottom: 10px;
+    @include rm(1024) {
+      margin-bottom: 20px;
+    }
   }
 
   &--subtitle {
     margin-bottom: 15px;
+    @include rm(1024) {
+      margin-bottom: 30px;
+    }
+    @include rm(1220) {
+      margin-bottom: 50px;
+    }
   }
 
   .danger {
@@ -14,14 +23,50 @@
       display: flex;
       flex-wrap: wrap;
       align-items: flex-end;
+      max-width: 720px;
+      margin: 0 auto 40px;
+    }
+    @include rm(1220) {
+      max-width: none;
+      align-items: flex-start;
+      justify-content: space-between;
     }
 
     &--item{
       margin: 0 auto;
-      max-width: 270px;
+      max-width: 240px;
+      @include rm(480) {
+        display: flex;
+        align-items: center;
+        max-width: none;
+      }
+      @include rm(640) {
+        max-width: 240px;
+        flex-direction: column;
+        &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+      @include rm(768) {
+        max-width: 270px;
+      }
+      @include rm(1220) {
+        &:nth-child(n) {
+          margin: 0;
+        }
+        &:nth-child(2n - 1) {
+          margin-top: 100px;
+        }
+      }
 
       &:not(:last-child) {
         margin-bottom: 40px;
+      }
+      &:nth-child(1) .danger--img {
+        max-width: 103.33%;
+      }
+      &:nth-child(2) .danger--img {
+        max-width: 108%;
       }
     }
 
@@ -33,6 +78,19 @@
       line-height: 20px;
       font-weight: 700;
       color: $black-color;
+      @include rm(480) {
+        max-width: 180px;
+        padding: 70px 5px 0;
+        margin: 0;
+        text-align: center;
+      }
+      @include rm(640) {
+        max-width: none;
+        padding: 0 0 0 90px;
+        margin-bottom: 30px;
+        vertical-align: middle;
+        text-align: left;
+      }
 
       &::before {
         position: absolute;
@@ -50,13 +108,25 @@
         color: $blue-darck;
         background: url(../img/line__grey.png) no-repeat center bottom;
         background-size: contain;
+        @include rm(480) {
+          top: 0;
+          left: calc(50% - 45px);
+        }
+        @include rm(640) {
+          left: 0;
+          top: calc(50% - 32px);}
       }
     }
 
     &--img_wrapper {
       position: relative;
-      width: 270px;
-      height: 270px;
+      width: 240px;
+      height: 240px;
+      margin: 0 auto;
+      @include rm(768) {
+        width: 270px;
+        height: 270px;
+      }
     }
 
     &--img {
@@ -67,13 +137,21 @@
   }
 
   &--bottom_text {
+    max-width: 700px;
+    margin: 0 auto;
     font-size: 22px;
     font-weight: 700;
     text-align: center;
     color: $black-color;
+    @include rm(1024) {
+      font-size: 26px;
+    }
 
     .text__orange {
       display: inline-block;
+      @include rm(1024) {
+        font-size: 28px;
+      }
     }
   }
 }

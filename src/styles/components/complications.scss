@@ -1,12 +1,46 @@
 .complications {
   &--title {
     margin-bottom: 20px;
+
+    @include rm(1024) {
+      margin-bottom: 30px;
+    }
+    @include rm(1220) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &--list {
+    @include rm(480) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
   }
 
   &--item {
     max-width: 270px;
     margin: 0 auto;
     text-align: center;
+    @include rm(480) {
+      max-width: 50%;
+      padding: 0 5px;
+      font-size: 16px;
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+    @include rm(768) {
+      font-size: 18px;
+    }
+    @include rm(1024) {
+      max-width: 25%;
+    }
+    @include rm(1220) {
+      max-width: 270px;
+      padding: 0;
+    }
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -14,19 +48,38 @@
   }
 
   &--img_wrapper {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 15px;
     border-radius: 50%;
     overflow: hidden;
+    @include rm(768) {
+      width: 220px;
+      height: 220px;
+    }
+    @include rm(1220) {
+      width: 270px;
+      height: 270px;
+      margin-bottom: 40px;
+    }
   }
 
   &--header {
     max-width: 160px;
     margin: 0 auto 10px;
     font-size: 20px;
+    line-height: 1;
     font-weight: 900;
     color:$black-color;
+    @include rm(768) {
+      // max-width: 100%;
+    }
+    @include rm(1024) {
+      max-width: 190px;
+      min-height: 56px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
   }
 
   &--text {
