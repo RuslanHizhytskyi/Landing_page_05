@@ -7,14 +7,16 @@
   }
   @include rm(1024) {
     position: relative;
+    margin-bottom: 30px;
     background-color: #fff;
     background: url(../img/man.png) no-repeat,
                 url(../img/bg__promo.jpg) no-repeat ;
-    background-position: left 59% bottom 15px,
+    background-position: left calc(50% + 75px) bottom 12px,
                          center bottom;
-    background-size: 450px auto,
+    background-size: 490px auto,
                      1220px 100%;
     @include rm(1220) {
+      margin-bottom: 85px;
       background-color: #fff;
       background: url(../img/man.png) no-repeat,
                   url(../img/bg__promo.jpg) no-repeat ;
@@ -49,12 +51,19 @@
       display: flex;
       justify-content: space-between;
     }
+    
+    @include rm(1220) {
+      margin-bottom: 40px;
+    }
   }
 
   &--logo {
     margin: 0 auto;
     @include rm(1024) {
       margin-right: 30px;
+    }
+    @include rm(1220) {
+      margin-right: 150px;
     }
   }
 
@@ -73,6 +82,11 @@
     &--item {
       position: relative;
       padding-left: 50px;
+      @include rm(1220) {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
       &::before {
         position: absolute;
         content: '';
@@ -100,12 +114,20 @@
     @include rm(1024) {
       max-width: 390px;
     }
+    @include rm(1220) {
+      max-width: 500px;
+    }
   }
 
   &--title {
     margin-bottom: 15px;
     @include rm(1024) {
+      margin-right: -140px;
       text-align: left;
+    }
+    @include rm(1220) {
+      margin-right: 0;
+      margin-bottom: 25px;
     }
   }
 
@@ -125,6 +147,9 @@
     @include rm(1024) {
       text-align: left;
     }
+    @include rm(1220) {
+      margin-bottom: 50px;
+    }
   }
 
   &--support {
@@ -133,6 +158,7 @@
 
 
   &--product {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -144,13 +170,33 @@
       margin-bottom: 50px;
     }
     @include rm(1024) {
+      padding-bottom: 10px;
       margin: auto 0 -100px -70px;
+      &::before {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 100%;
+        height: 30%;
+        left: 0;
+        bottom: 0;
+        background: url(../img/line__grey.png) no-repeat center bottom;
+        background-size: 100% auto;
+      }
+    }
+    @include rm(1220) {
+      width: 524px;
+      margin: auto -60px -190px -80px;
     }
   }
 
   .order {
     margin: 0 auto;
+    @include rm(1220) {
+      margin: 0 20px 0 0;
+    }
   }
+
 }
 
 .support {

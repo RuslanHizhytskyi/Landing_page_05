@@ -1,5 +1,6 @@
 .order {
   position: relative;
+  min-width: 270px;
   width: 270px;
   padding: 30px 20px 40px;
   background: #fff;
@@ -20,7 +21,14 @@
     font-weight: 700;
     background: url(../img/discount__bg.png) no-repeat center center;
     background-size: contain;
-    transform: rotate(6deg);
+    transform: rotate(5deg);
+    @include rm(1220) {
+      width: 95px;
+      right: -40px;
+      top: -20px;
+      padding: 15px 0;
+      font-size: 36px;
+    }
 
     &_percent {
       font-size: 18px;

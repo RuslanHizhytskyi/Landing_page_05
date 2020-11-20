@@ -10,6 +10,11 @@
   .danger {
     margin-bottom: 20px;
     counter-reset: danger;
+    @include rm(640) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
 
     &--item{
       margin: 0 auto;
