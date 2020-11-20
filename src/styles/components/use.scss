@@ -1,0 +1,59 @@
+.use {
+  &--title {
+    margin-bottom: 15px;
+  }
+  &--wrapper_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+.howuse {
+  padding-left: 30px;
+  counter-reset: howuse;
+  &--item {
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid $grey-color-2;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &::before {
+      position: absolute;
+      counter-increment: howuse;
+      content: counter(howuse);
+      left: -30px;
+      top: calc(50% - 20px);
+      font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+      color: $grey-text-color;
+      font-style: italic;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+  &--text {
+    padding: 10px;
+    font-weight: 900;
+    &__1 {
+      border-bottom: 1px solid $grey-color-2;
+    }
+  }
+}
+
+.age {
+  margin-bottom: 15px;
+  &--item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &--header {
+    font-size: 22px;
+  }
+  &--course {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,57 @@
+.composition {
+
+  &--title {
+    margin-bottom: 15px;
+  }
+
+  &--wrapper__left {
+    margin-bottom: 15px;
+  }
+
+  &--prod {
+    margin: 0 auto;
+  }
+
+  &--list {
+    margin-bottom: 20px;
+  }
+
+  &--item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:first-child .composition--img {
+      width: 75px;
+      margin-left: -5px;
+    }
+
+    picture {
+      flex-shrink: 0;
+    }
+  }
+
+  &--img {
+    width: 70px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  &--header {
+    color: $black-color;
+    font-weight: 900;
+  }
+
+  &--text {
+    font-size: 16px;
+  }
+
+  &--button {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+}

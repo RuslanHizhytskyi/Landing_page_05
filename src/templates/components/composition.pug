@@ -1,0 +1,37 @@
+section.composition.block.bg
+  .container
+    h2.composition--title.title.title--line Состав 
+      span.text__orange Трауфрила
+      | , благодаря которому он — единственная альтернатива операции
+    .composition--wrapper__left
+      picture
+        source(media="(max-width: 767px)", srcset="img/prod_mob.webp", type="image/webp")
+        source(media="(max-width: 767px)", srcset="img/prod_mob.png")
+        source(srcset="img/prod.webp", type="image/webp")
+        img.composition--prod(src="img/prod.png", alt="")
+    .composition--wrapper__right
+      ul.composition--list
+        li.composition--item
+          picture
+            source(srcset="img/composition__01.webp", type="image/webp")
+            img.composition--img(src="img/composition__01.png", alt="")
+          .composition--text_wrapper
+            h3.composition--header Протеины крови марала и бобрового мускуса
+            p.composition--text способствует уменьшению грыжи восстанавливая стенки брюшной полости и повышая эластичность
+        li.composition--item
+          picture
+            source(srcset="img/composition__02.webp", type="image/webp")
+            img.composition--img(src="img/composition__02.png", alt="")
+          .composition--text_wrapper
+            h3.composition--header Экстракт леспедецы и прополиса
+            p.composition--text устраняет боль и предотвращает отмирание органов нормализуя внутрибрюшное давление
+        li.composition--item
+          picture
+            source(srcset="img/composition__03.webp", type="image/webp")
+            img.composition--img(src="img/composition__03.png", alt="")
+          .composition--text_wrapper
+            h3.composition--header Концентрат кровохлебки и любистка
+            p.composition--text избавляет от риска ущемления грыжи улучшая кровообращение и эластичность стенок ущемленных органов
+    a.composition--button.btn.bold.ever-popup-btn
+      span.btn--biger_text Заказать 
+      span.btn--smaller_text со скидкой

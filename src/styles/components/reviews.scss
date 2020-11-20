@@ -1,0 +1,130 @@
+.reviews {
+  &--title {
+    margin-bottom: 15px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border: 17px solid transparent;
+    border-left-color: #fff;
+    &::before {
+      position: absolute;
+      opacity: 1;
+      content: '';
+      left: -13px;
+      top: -8px;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-left-color: $grey-text-color;
+    }
+    &:hover::before,
+    &:focus::before {
+      border-left-color: $orange-color;
+    }
+  }
+  
+  .slick-next {
+    top: 150px;
+    right: -10px;
+  }
+  
+  .slick-prev {
+    top: 137px;
+    left: -10px;
+    transform: rotate(180deg);
+  }
+  .slick-dots {
+    bottom: 0;
+    li {
+      width: 10px;
+      height: 10px;
+      button {
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #cacfe2;
+        background-color: #eef1f6;
+      }
+      &:hover,
+      &:focus,
+      &.slick-active {
+        button {
+          border: 1px solid $orange-color;
+          background-color: $orange-color;
+        }
+      }
+    }
+  }
+}
+
+.review {
+  padding-bottom: 25px;
+
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &--img_wrapper {
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+
+    
+    &[data-flag="before_after"]::after,
+    &[data-flag="before_after"]::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      width: 144px;
+      max-width: 48%;
+      height: 30px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+      background: url(../img/line__grey.png) no-repeat center bottom;
+      background-size: 100% 90%;
+    }
+    
+    &[data-flag="before_after"]::before {
+      content: 'До';
+      left: calc(50% - 144px);
+    }
+    
+    &[data-flag="before_after"]::after {
+      content: 'После';
+      right: calc(50% - 144px);
+    }
+  }
+  &--photo {
+    max-height: 200px;
+  }
+  &--name {
+    font-size: 18px;
+  }
+  &--age {
+    font-size: 14px;
+    font-weight: 400;
+    color: $grey-text-color;
+  }
+  &--city {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  &--header {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  &--text {
+    font-size: 17px;
+  }
+}

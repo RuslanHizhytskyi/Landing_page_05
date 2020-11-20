@@ -1,0 +1,31 @@
+.form {
+  width: 226px;
+  padding: 0 0 5px;
+
+  &--label {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+
+    svg {
+      position: absolute;
+      bottom: 22px;
+      left: 27px;
+    }
+  }
+
+  &--input {
+    width: 100%;
+    padding: 20px 10px 20px 60px;
+    color: $grey-text-color;
+    font-size: 16px;
+    line-height: 20px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #dfe2e3;
+  }
+
+  &--button {
+    width: 100%;
+  }
+}

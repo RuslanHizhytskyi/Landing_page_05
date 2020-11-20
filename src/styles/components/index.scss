@@ -1,0 +1,33 @@
+// .foo {
+//    width: 240px;
+//  }
+  
+//  @media screen and (min-width: 768px) {
+//    .foo {
+//      width: 576px;
+//    }
+//  }
+  
+//  .bar {
+//    width: 160px;
+//  }
+  
+//  @media screen and (min-width: 768px) {
+//    .bar {
+//      width: 384px;
+//    }
+//  }
+@import "order";
+@import "price";
+@import "form";
+@import "promo";
+@import "bomb";
+@import "complications";
+@import "stop";
+@import "composition";
+@import "oldman";
+@import "doctor";
+@import "use";
+@import "reviews";
+@import "delivery";
+@import "footer";

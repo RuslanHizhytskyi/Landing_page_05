@@ -1,0 +1,41 @@
+.oldman {
+  &--wrapper_text {
+    margin-bottom: 15px;
+  }
+  &--title {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  &--subtitle {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    .text__orange {
+      font-size: 22px;
+    }
+  }
+
+  &--text {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  &--wrapper_author {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &--info {
+    font-size: 22px;
+    &__age {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+  &--who {
+    // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+  }
+}

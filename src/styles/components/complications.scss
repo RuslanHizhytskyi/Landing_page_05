@@ -1,0 +1,39 @@
+.complications {
+  &--title {
+    margin-bottom: 20px;
+  }
+
+  &--item {
+    max-width: 270px;
+    margin: 0 auto;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &--img_wrapper {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &--header {
+    max-width: 160px;
+    margin: 0 auto 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color:$black-color;
+  }
+
+  &--text {
+    color: $grey-text-color;
+
+    .text__blue {
+      font-weight: 700;
+    }
+  }
+}
