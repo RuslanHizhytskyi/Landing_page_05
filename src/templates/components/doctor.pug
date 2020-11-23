@@ -1,18 +1,8 @@
 section.doctor.block.bg
   .container
-    h2.doctor__title.title Слово специалисту:
     .doctor__wrapper
-      .doctor__wrapper_doc
-        picture
-          source(media="(max-width: 767px)", srcset="img/doctor_mob.webp", type="image/webp")
-          source(media="(max-width: 767px)", srcset="img/doctor_mob.png")
-          source(srcset="img/doctor.webp", type="image/webp")
-          img.doctor__photo(src="img/doctor.png", alt="Doctor" loading="lazy")
-        p.doctor__name.header__text Алексей Колесников,
-        p.doctor__speciality.text__orange врач-хирург
-        p.doctor__experiance стаж работы:
-          span.header__text 18 лет 
       .doctor__wrapper_text
+        h2.doctor__title.title Мнение эксперта:
         h3.doctor__header.header__text “Пока болезнь не запущена - лучше лечить её растительными препаратами”
         p.doctor__subtitle.text__black врач-хирург высшей категории, кандидат медицинских наук 
           span.bold.text__orange Алексей Колесников
@@ -24,3 +14,13 @@ section.doctor.block.bg
           span.bold.text__black Этот препарат помогает свести грыжу на нет без вреда для пациента.
           | Я рекомендую его всем, кто приходит ко мне с грыжей и хочет избежать операции. И взрослым, и детям.
         img.doctor__sign(src="img/sign.png", alt="Sign")
+      .doctor__wrapper_doc
+          picture
+            source(media="(max-width: 767px)", srcset="img/doctor_mob.webp", type="image/webp")
+            source(media="(max-width: 767px)", srcset="img/doctor_mob.png")
+            source(srcset="img/doctor.webp", type="image/webp")
+            img.doctor__photo(src="img/doctor.png", alt="Doctor" loading="lazy")
+          p.doctor__name.header__text Алексей Колесников, 
+          p.doctor__speciality.text__orange врач-хирург 
+          p.doctor__experiance стаж работы: 
+            span.header__text 18 лет 
