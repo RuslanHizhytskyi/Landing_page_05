@@ -176,6 +176,7 @@ button {
 .bg--line__grey::after {
   background: url(../img/line__grey.png) no-repeat center center;
   background-size: 150px auto;
+  transform: rotate(-4deg);
 }
 
 .btn {
