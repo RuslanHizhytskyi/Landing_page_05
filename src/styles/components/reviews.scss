@@ -1,6 +1,15 @@
 .reviews {
   &__title {
     margin-bottom: 15px;
+    @include rm(768) {
+      margin-bottom: 25px;
+    }
+    @include rm(1024) {
+      margin-bottom: 40px;
+    }
+    @include rm(1220) {
+      margin-bottom: 50px;
+    }
   }
 
   .slick-next,
@@ -70,16 +79,36 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include rm(768) {
+      padding: 15px;
+      margin: 0 40px;
+      background: #fff;
+      border-radius: 16px;
+    }
+    @include rm(1024) {
+      flex-direction: row;
+      text-align: left;
+    }
   }
   &__img_wrapper {
     position: relative;
     max-width: 300px;
     height: 200px;
     margin-bottom: 10px;
-
+    @include rm(1024) {
+      min-width: 340px;
+      height: 220px;
+      margin: 0 20px 0 0;
+    }
+    &:not([data-marker="before_after"]) {
+      @include rm(1024) {
+        min-width: 220px;
+        height: 220px;
+      }
+    }
     
-    &[data-flag="before_after"]::after,
-    &[data-flag="before_after"]::before {
+    &[data-marker="before_after"]::after,
+    &[data-marker="before_after"]::before {
       position: absolute;
       content: '';
       bottom: 0;
@@ -94,18 +123,22 @@
       background-size: 100% 90%;
     }
     
-    &[data-flag="before_after"]::before {
+    &[data-marker="before_after"]::before {
       content: 'До';
       left: calc(50% - 144px);
     }
     
-    &[data-flag="before_after"]::after {
+    &[data-marker="before_after"]::after {
       content: 'После';
       right: calc(50% - 144px);
     }
   }
   &__photo {
     max-height: 200px;
+    @include rm(1024) {
+      margin: auto;
+      max-height: 220px;
+    }
   }
   &__name {
     font-size: 18px;
@@ -119,10 +152,18 @@
     margin-bottom: 10px;
     font-size: 16px;
     font-style: italic;
+    
+    @include rm(1024) {
+      margin-bottom: 25px;
+    }
   }
   &__header {
     margin-bottom: 10px;
     font-size: 22px;
+    
+    @include rm(1024) {
+      margin-bottom: 20px;
+    }
   }
   &__text {
     font-size: 17px;

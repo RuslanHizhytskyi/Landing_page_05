@@ -1,7 +1,7 @@
 mixin review(slide)
   .review
     .review__wrapper
-      .review__img_wrapper(data-flag!=slide.flag)
+      .review__img_wrapper(data-marker!=slide.flag)
         picture
           source(srcset="img/"+slide.webp, type="image/webp")
           img.review__photo(src="img/"+slide.img, alt="Photo", loading="lazy")
