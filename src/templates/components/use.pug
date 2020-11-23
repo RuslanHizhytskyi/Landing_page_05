@@ -1,26 +1,32 @@
 section.use.block
   .container
-    .use__wrapper_left
-      h2.use__title.title.title__line Как применять
-        span.text__orange Трауфрил
-      ul.use__list.age
-        li.age__item
-          h3.age__header.header__text Взрослым и детям от 12 лет
-          p.age__course рекомендуемый курс — от 30 дней
-        li.age__item
-          h3.age__header.header__text Детям с 6 до 12 лет
-          p.age__course рекомендуемый курс — от 20 дней
-      picture
-        source(media="(max-width: 767px)", srcset="img/prod_mob.webp", type="image/webp")
-        source(media="(max-width: 767px)", srcset="img/prod_mob.png")
-        source(srcset="img/prod.webp", type="image/webp")
-        img.use__prod(src="img/prod.png", alt="")
-    .use__wrapper_right
-      ul.use__how.howuse
-        li.howuse__item
-          p.howuse__text.howuse__text__1 Вскройте ампулу 
-          p.howuse__text.howuse__text__2 Нанесите содержимое на проблемные области выпирания грыжи
-        li.howuse__item
-          p.howuse__text.howuse__text__3 Используйте ампулу полностью после вскрытия
-        li.howuse__item
-          p.howuse__text.howuse__text__4 Применяйте по 1 ампуле утром и вечером
+    .use__wrapper
+      .use__wrapper_left
+        h2.use__title.title.title__line Как применять
+          span.text__orange Трауфрил
+        .use__wrapper--small
+          ul.use__list.age
+            li.age__item
+              h3.age__header.header__text Взрослым и детям от 12 лет
+              p.age__course рекомендуемый курс — от 30 дней
+            li.age__item
+              h3.age__header.header__text Детям с 6 до 12 лет
+              p.age__course рекомендуемый курс — от 20 дней
+          picture
+            source(media="(max-width: 767px)", srcset="img/prod_mob.webp", type="image/webp")
+            source(media="(max-width: 767px)", srcset="img/prod_mob.png")
+            source(srcset="img/prod.webp", type="image/webp")
+            img.use__prod(src="img/prod.png", alt="")
+      .use__wrapper_right
+        ul.use__how.howuse
+          li.howuse__item
+            p.howuse__text.howuse__text--1 
+              span Вскройте ампулу 
+            p.howuse__text.howuse__text--2
+              span Нанесите содержимое на проблемные области выпирания грыжи
+          li.howuse__item
+            p.howuse__text.howuse__text--3
+              span Используйте<br> ампулу полностью после вскрытия
+          li.howuse__item
+            p.howuse__text.howuse__text--4
+              span Применяйте<br> по 1 ампуле<br> утром и вечером

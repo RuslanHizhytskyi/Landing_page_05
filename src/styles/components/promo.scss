@@ -8,27 +8,8 @@
   @include rm(1024) {
     position: relative;
     margin-bottom: 30px;
-    background-color: #fff;
-    background: url(../img/man.png) no-repeat,
-                url(../img/bg__promo.jpg) no-repeat ;
-    background-position: left calc(50% + 75px) bottom 12px,
-                         center bottom;
-    background-size: 490px auto,
-                     1220px 100%;
     @include rm(1220) {
       margin-bottom: 85px;
-      background-color: #fff;
-      background: url(../img/man.png) no-repeat,
-                  url(../img/bg__promo.jpg) no-repeat ;
-      background-position: left calc(50% + 150px) bottom,
-                          center bottom;
-      background-size: auto auto,
-                       auto 100%;
-    }
-    &::after {
-      position: absolute;
-      content: '';
-      width: 100%;
     }
   }
 
@@ -196,7 +177,32 @@
       margin: 0 20px 0 0;
     }
   }
+}
 
+.no-webp .promo {
+  @include rm(1024) {
+    background-color: #fff;
+    background: url(../img/man.png) no-repeat left calc(50% + 75px) bottom 12px / 490px auto,
+                url(../img/bg__promo.jpg) no-repeat center bottom / 1220px 100%;
+    @include rm(1220) {
+      background-color: #fff;
+      background-image: url(../img/man.png) no-repeat left calc(50% + 150px) bottom / auto auto,
+                  url(../img/bg__promo.jpg) no-repeat center bottom / auto 100%;
+    }
+  }
+}
+
+.webp .promo {
+  @include rm(1024) {
+    background-color: #fff;
+    background: url(../img/man.webp) no-repeat left calc(50% + 75px) bottom 12px / 490px auto,
+                url(../img/bg__promo.jpg) no-repeat center bottom / 1220px 100%;
+    @include rm(1220) {
+      background-color: #fff;
+      background: url(../img/man.webp) no-repeat left calc(50% + 150px) bottom / auto auto,
+                        url(../img/bg__promo.jpg) no-repeat center bottom / auto 100%;
+    }
+  }
 }
 
 .support {

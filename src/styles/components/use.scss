@@ -1,18 +1,68 @@
 .use {
   &__title {
     margin-bottom: 15px;
+    @include rm(1024) {
+      text-align: left;
+    }
+    @include rm(1220) {
+      margin-bottom: 45px;
+      &::after {
+        left: 0;
+      }
+    }
+    .text__orange {
+      @include rm(1024) {
+        display: block;
+      }
+    }
+  }
+  &__wrapper {
+    @include rm(1024) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   &__wrapper_left {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 15px;
+    @include rm(1024) {
+      min-width: 500px;
+      align-items: flex-start;
+    }
+  }
+  &__wrapper--small {
+    @include rm(640) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    @include rm(1024) {
+      flex-direction: column;
+    }
+  }
+  &__prod {
+    margin: 0 auto;
+    @include rm(1220) {
+      max-width: 524px;
+      margin-left: -24px;
+    }
+  }
+  &__wrapper_right {
+    @include rm(1220) {
+      width: 630px;
+    }
   }
 }
 
 .howuse {
   padding-left: 30px;
   counter-reset: howuse;
+  @include rm(1220) {
+    padding-left: 80px;
+  }
   &__item {
     position: relative;
     border-radius: 10px;
@@ -27,24 +77,107 @@
       left: -30px;
       top: calc(50% - 20px);
       font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-      color: $grey-text-color;
+      color: #c4c8d9;
       font-style: italic;
       font-size: 40px;
       font-weight: 700;
       line-height: 1;
+      
+      @include rm(480) {
+        top: 10px;
+      }
+      @include rm(1220) {
+        top: calc(50% - 40px);
+        left: -80px;
+        font-size: 80px;
+      }
     }
   }
   &__text {
     padding: 10px;
     font-weight: 900;
-    &__1 {
+    @include rm(480) {
+      padding: 20px 10px 20px 70px;
+    }
+    @include rm(768) {
+      padding: 30px 10px 30px 90px;
+      font-size: 20px;
+    }
+    @include rm(1220) {
+      min-height: 155px;
+      display: flex;
+      align-items: center;
+      padding: 20px 45px 20px 225px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &--1 {
       border-bottom: 1px solid $grey-color-2;
+      @include rm(480) {
+        background: url(../img/use__01.png) no-repeat left 8px center / auto 45px;
+      }
+      @include rm(768) {
+        background: url(../img/use__01.png) no-repeat left 12px center / auto 60px;
+      }
+      @include rm(1220) {
+        background: url(../img/use__01.png) no-repeat left 31px center / auto auto;
+      }
+    }
+    &--2 {
+      @include rm(480) {
+        background: url(../img/use__02.png) no-repeat left 3px center / auto 45px;
+      }
+      @include rm(768) {
+        background: url(../img/use__02.png) no-repeat left 3px center / auto 60px;
+      }
+      @include rm(1220) {
+        background: url(../img/use__02.png) no-repeat left 31px center / auto auto;
+      }
+    }
+    &--3 {
+      @include rm(480) {
+        background: url(../img/use__03.png) no-repeat left 12px center / auto 45px;
+      }
+      @include rm(768) {
+        background: url(../img/use__03.png) no-repeat left 18px center / auto 60px;
+      }
+      @include rm(1220) {
+        background: url(../img/use__03.png) no-repeat left 45px center / auto auto;
+      }
+    }
+    &--4{
+      @include rm(480) {
+        background: url(../img/use__04.png) no-repeat left 10px center / auto 45px;
+      }
+      @include rm(768) {
+        background: url(../img/use__04.png) no-repeat left 15px center / auto 60px;
+      }
+      @include rm(1220) {
+        background: url(../img/use__04.png) no-repeat left 41px center / auto auto;
+      }
+    }
+    br {
+      display: none;
+      @include rm(1220) {
+        display: inline-block;
+      }
     }
   }
 }
 
 .age {
   margin-bottom: 15px;
+  @include rm(480) {
+    padding: 15px 0 15px 60px;
+    background: url(../img/use__bg.png) no-repeat left center / auto 100%;
+  }
+  @include rm(1024) {
+    padding: 24px 10px 24px 110px;
+    margin-right: auto;
+  }
+  @include rm(1220) {
+    margin-bottom: 30px;
+  }
   &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
