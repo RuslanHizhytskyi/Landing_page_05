@@ -1,12 +1,12 @@
 .bomb {
-  &--title {
+  &__title {
     margin-bottom: 10px;
     @include rm(1024) {
       margin-bottom: 20px;
     }
   }
 
-  &--subtitle {
+  &__subtitle {
     margin-bottom: 15px;
     @include rm(1024) {
       margin-bottom: 30px;
@@ -32,7 +32,7 @@
       justify-content: space-between;
     }
 
-    &--item{
+    &__item{
       margin: 0 auto;
       max-width: 240px;
       @include rm(480) {
@@ -62,15 +62,15 @@
       &:not(:last-child) {
         margin-bottom: 40px;
       }
-      &:nth-child(1) .danger--img {
+      &:nth-child(1) .danger__img {
         max-width: 103.33%;
       }
-      &:nth-child(2) .danger--img {
+      &:nth-child(2) .danger__img {
         max-width: 108%;
       }
     }
 
-    &--text {
+    &__text {
       position: relative;
       padding-left: 90px;
       margin-bottom: 30px;
@@ -118,7 +118,7 @@
       }
     }
 
-    &--img_wrapper {
+    &__img_wrapper {
       position: relative;
       width: 240px;
       height: 240px;
@@ -129,14 +129,14 @@
       }
     }
 
-    &--img {
+    &__img {
       position: absolute;
       bottom: 0;
       left: 0;
     }
   }
 
-  &--bottom_text {
+  &__bottom_text {
     max-width: 700px;
     margin: 0 auto;
     font-size: 22px;

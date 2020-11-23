@@ -2,12 +2,12 @@
   display: flex;
   width: 100%;
 
-  &--name {
+  &__name {
     font-size: 13px;
   }
 
-  &--old,
-  &--new {
+  &__old,
+  &__new {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,20 +16,20 @@
     padding: 0 5px;
   }
 
-  &--name {
+  &__name {
     margin-bottom: 10px;
   }
 
-  &--old {
+  &__old {
     position: relative;
     color: #d9ddec;
 
-    .price--name {
+    .price__name {
       color:$grey-text-color;
     }
   }
 
-  &--old::after {
+  &__old::after {
     position: absolute;
     content: '';
     width: 1px;
@@ -40,10 +40,10 @@
   }
 
   
-  &--new {
+  &__new {
     color: #fed023;
 
-    .price--name {
+    .price__name {
       color: $blue-darck;
     }
   }

@@ -1,6 +1,6 @@
 .composition {
 
-  &--title {
+  &__title {
     margin-bottom: 15px;
     @include rm(1024) {
       margin-bottom: 30px;
@@ -16,7 +16,7 @@
     }
   }
 
-  &--wrapper__main {
+  &__wrapper__main {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 20px;
@@ -30,10 +30,10 @@
     }
   }
 
-  // &--wrapper__right {
+  // &__wrapper__right {
   // }
 
-  &--wrapper__left {
+  &__wrapper__left {
     @include rm(640) {
       min-width: 280px;
     }
@@ -49,7 +49,7 @@
     }
   }
 
-  &--prod {
+  &__prod {
     margin: 0 auto;
     @include rm(1220) {
       position: absolute;
@@ -59,7 +59,7 @@
     }
   }
 
-  &--list {
+  &__list {
     margin-bottom: 15px;
     @include rm(640) {
       margin: 0;
@@ -69,7 +69,7 @@
     }
   }
 
-  &--item {
+  &__item {
     position: relative;
     display: flex;
     padding-left: 70px;
@@ -87,7 +87,7 @@
       }
     }
 
-    &:first-child .composition--img {
+    &:first-child .composition__img {
       width: 65px;
       left: -5px;
       // margin: 0 10px 0 -5px;
@@ -104,14 +104,14 @@
         top: 10px;
       }
     }
-    &:nth-child(2) .composition--img {
+    &:nth-child(2) .composition__img {
       @include rm(1220) {
         width: 108px;
         top: 5px;
       }
     }
     
-    &:nth-child(3) .composition--img {
+    &:nth-child(3) .composition__img {
       @include rm(1220) {
         width: 100px;
         top: 0px;
@@ -122,7 +122,7 @@
     //   flex-shrink: 0;
     // }
   }
-  &--text_wrapper {
+  &__text_wrapper {
     @include rm(1024) {
       display: flex;
       align-items: center;
@@ -130,7 +130,7 @@
     }
   }
 
-  &--img {
+  &__img {
     position: absolute;
     width: 50px;
     top: 0;
@@ -143,7 +143,7 @@
     }
   }
 
-  &--header {
+  &__header {
     color: $black-color;
     font-weight: 900;
     @include rm(1024) {
@@ -154,14 +154,14 @@
     }
   }
 
-  &--text {
+  &__text {
     font-size: 16px;
     @include rm(1024) {
       font-size: 18px;
     }
   }
 
-  &--button {
+  &__button {
     display: block;
     max-width: 220px;
     margin: 0 auto;

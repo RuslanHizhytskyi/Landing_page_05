@@ -1,5 +1,5 @@
 .complications {
-  &--title {
+  &__title {
     margin-bottom: 20px;
 
     @include rm(1024) {
@@ -10,7 +10,7 @@
     }
   }
 
-  &--list {
+  &__list {
     @include rm(480) {
       display: flex;
       flex-wrap: wrap;
@@ -18,7 +18,7 @@
     }
   }
 
-  &--item {
+  &__item {
     max-width: 270px;
     margin: 0 auto;
     text-align: center;
@@ -47,7 +47,7 @@
     }
   }
 
-  &--img_wrapper {
+  &__img_wrapper {
     width: 200px;
     height: 200px;
     margin: 0 auto 15px;
@@ -64,7 +64,7 @@
     }
   }
 
-  &--header {
+  &__header {
     max-width: 160px;
     margin: 0 auto 10px;
     font-size: 20px;
@@ -82,7 +82,7 @@
     }
   }
 
-  &--text {
+  &__text {
     color: $grey-text-color;
 
     .text__blue {

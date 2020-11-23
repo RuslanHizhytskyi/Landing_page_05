@@ -1,5 +1,5 @@
 .reviews {
-  &--title {
+  &__title {
     margin-bottom: 15px;
   }
 
@@ -65,13 +65,13 @@
 .review {
   padding-bottom: 25px;
 
-  &--wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  &--img_wrapper {
+  &__img_wrapper {
     position: relative;
     max-width: 300px;
     height: 200px;
@@ -104,27 +104,27 @@
       right: calc(50% - 144px);
     }
   }
-  &--photo {
+  &__photo {
     max-height: 200px;
   }
-  &--name {
+  &__name {
     font-size: 18px;
   }
-  &--age {
+  &__age {
     font-size: 14px;
     font-weight: 400;
     color: $grey-text-color;
   }
-  &--city {
+  &__city {
     margin-bottom: 10px;
     font-size: 16px;
     font-style: italic;
   }
-  &--header {
+  &__header {
     margin-bottom: 10px;
     font-size: 22px;
   }
-  &--text {
+  &__text {
     font-size: 17px;
   }
 }

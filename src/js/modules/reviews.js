@@ -1,5 +1,5 @@
 export default () => {
-  $('.revievws--slider').slick({
+  $('.revievws__slider').slick({
     dots: true,
     arrows: true,
     infinite: true,

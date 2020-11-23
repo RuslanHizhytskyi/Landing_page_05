@@ -1,39 +1,85 @@
 .oldman {
-  &--wrapper_text {
-    margin-bottom: 15px;
+  @include rm(1220) {
+    background: url(../img/oldman__bg.jpg) no-repeat left calc(50% + 440px) top calc(50% - 80px);
   }
-  &--title {
+  &__wrapper {
+    @include rm(1024) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include rm(1220) {
+      align-items: flex-end;
+      // background: url(../img/oldman__bg.jpg) no-repeat left calc(50% + 480px) center;
+    }
+  }
+  &__wrapper_text {
+    margin-bottom: 15px;
+    @include rm(1024) {
+      max-width: 680px;
+      margin: 0;
+    }
+    @include rm(1220) {
+      max-width: 770px;
+    }
+  }
+  &__title {
     margin-bottom: 15px;
     font-size: 22px;
+    @include rm(1024) {
+      font-size: 32px;
+      line-height: 1.1;
+      text-align: left;
+    }
+    @include rm(1220) {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
   }
-  &--subtitle {
+  &__subtitle {
     margin-bottom: 15px;
     font-size: 18px;
+    @include rm(1220) {
+      margin-bottom: 40px;
+    }
 
     .text__orange {
       font-size: 22px;
+      @include rm(1024) {
+        font-size: 24px;
+      }
     }
   }
 
-  &--text {
+  &__text {
     margin-bottom: 10px;
     font-size: 17px;
+    @include rm(1220) {
+      margin-bottom: 20px;
+    }
   }
-  &--wrapper_author {
+  &__wrapper_author {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    @include rm(768) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    @include rm(1220) {
+      max-width: 400px;
+    }
   }
 
-  &--info {
+  &__info {
     font-size: 22px;
     &__age {
       font-weight: 400;
       font-size: 17px;
     }
   }
-  &--who {
+  &__who {
     // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 17px;
     font-style: italic;

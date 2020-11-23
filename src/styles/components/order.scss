@@ -6,7 +6,7 @@
   background: #fff;
   border-radius: 6px;
 
-  &--discount {
+  &__discount {
     position: absolute;
     right: -20px;
     top: -30px;
@@ -35,7 +35,7 @@
     }
   }
 
-  &--date {
+  &__date {
     max-width: 150px;
     margin: 0 auto 25px;
     text-align: center;
@@ -45,7 +45,7 @@
     margin-bottom: 20px;
   }
 
-  &--pack {
+  &__pack {
     max-width: 180px;
     margin: 0 auto 20px;
     text-align: center;
@@ -57,7 +57,7 @@
     margin: 0 auto 30px;
   }
 
-  &--protect {
+  &__protect {
     position: relative;
     padding-left: 50px;
     font-size: 14px;

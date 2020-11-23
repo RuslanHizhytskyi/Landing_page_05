@@ -2,7 +2,7 @@
   width: 226px;
   padding: 0 0 5px;
 
-  &--label {
+  &__label {
     position: relative;
     display: block;
     margin-bottom: 15px;
@@ -14,7 +14,7 @@
     }
   }
 
-  &--input {
+  &__input {
     width: 100%;
     padding: 20px 10px 20px 60px;
     color: $grey-text-color;
@@ -25,7 +25,7 @@
     border: 1px solid #dfe2e3;
   }
 
-  &--button {
+  &__button {
     width: 100%;
   }
 }

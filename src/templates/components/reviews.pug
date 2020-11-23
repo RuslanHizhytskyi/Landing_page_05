@@ -1,16 +1,16 @@
 mixin review(slide)
   .review
-    .review--wrapper
-      .review--img_wrapper(data-flag!=slide.flag)
+    .review__wrapper
+      .review__img_wrapper(data-flag!=slide.flag)
         picture
           source(srcset="img/"+slide.webp, type="image/webp")
-          img.review--photo(src="img/"+slide.img, alt="Photo", loading="lazy")
-      .review--text
-        p.review--name.header__text!= slide.name 
-          span.review--age!= slide.age
-        p.review--city.text__orange!= slide.city
-        h3.review--header.header__text!= slide.header
-        p.review--text!= slide.text
+          img.review__photo(src="img/"+slide.img, alt="Photo", loading="lazy")
+      .review__text
+        p.review__name.header__text!= slide.name 
+          span.review__age!= slide.age
+        p.review__city.text__orange!= slide.city
+        h3.review__header.header__text!= slide.header
+        p.review__text!= slide.text
 -
   const reviewArray = [
     {
@@ -93,8 +93,8 @@ mixin review(slide)
 
 section.reviews.block.bg
   .container
-    h2.reviews--title.title.title--line Отзывы людей, которые победили грыжу с 
+    h2.reviews__title.title.title__line Отзывы людей, которые победили грыжу с 
       span.text__orange Трауфрил
-    .revievws--slider
+    .revievws__slider
       each slide in reviewArray
         +review(slide)

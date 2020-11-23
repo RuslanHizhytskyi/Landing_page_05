@@ -153,12 +153,12 @@ button {
   color: $orange-color;
 }
 
-.bg--line {
+.bg__line {
   position: relative;
   z-index: 2;
 }
 
-.bg--line::after {
+.bg__line::after {
   position: absolute;
   z-index: -1;
   content: '';
@@ -168,12 +168,12 @@ button {
   left: -5%;
 }
 
-.bg--line__yellow::after {
+.bg__line__yellow::after {
   background: url(../img/line__yellow.png) no-repeat center center;
   background-size: contain;
 }
 
-.bg--line__grey::after {
+.bg__line__grey::after {
   background: url(../img/line__grey.png) no-repeat center center;
   background-size: 150px auto;
   transform: rotate(-4deg);
@@ -199,19 +199,19 @@ button {
     box-shadow: none;
   }
 
-  &--biger_text {
+  &__biger_text {
     display: block;
     font-size: 30px;
     line-height: 22px;
   }
 
-  &--smaller_text {
+  &__smaller_text {
     font-size: 16px;
     line-height: 17px;
   }
 }
 
-.list--line{
+.list__line{
   position: relative;
   padding-bottom: 50px;
   @include rm(1024) {
@@ -232,7 +232,7 @@ button {
   }
 }
 
-.title--line {
+.title__line {
   position: relative;
   padding-bottom: 50px;
   @include rm(768) {

@@ -1,8 +1,8 @@
 .use {
-  &--title {
+  &__title {
     margin-bottom: 15px;
   }
-  &--wrapper_left {
+  &__wrapper_left {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,7 +13,7 @@
 .howuse {
   padding-left: 30px;
   counter-reset: howuse;
-  &--item {
+  &__item {
     position: relative;
     border-radius: 10px;
     border: 1px solid $grey-color-2;
@@ -34,7 +34,7 @@
       line-height: 1;
     }
   }
-  &--text {
+  &__text {
     padding: 10px;
     font-weight: 900;
     &__1 {
@@ -45,15 +45,15 @@
 
 .age {
   margin-bottom: 15px;
-  &--item {
+  &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
-  &--header {
+  &__header {
     font-size: 22px;
   }
-  &--course {
+  &__course {
     font-size: 17px;
   }
 }

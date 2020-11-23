@@ -1,35 +1,35 @@
 section.promo.block
   .container
-    .promo--top_wrapper
-      img.promo--logo(alt="logo", src="img/logo.png", width="270", height="64")
-      ul.promo--excellence.excellence
-        li.excellence--item Рекомендация терапевтов #1 при грыжах
-        li.excellence--item Натуральный органический состав
-        li.excellence--item Эффективность подтверждена клиниками Израиля и США
-    .promo--mid_wrapper
-      .promo--main_text
-        h2.promo--title.title Единственная альтернатива операции
-        h3.promo--subtitle.bold при грыжах брюшной стенки, паховой области и половых органов
-        ul.promo--support.support
-          li.support--item
+    .promo__top_wrapper
+      img.promo__logo(alt="logo", src="img/logo.png", width="270", height="64")
+      ul.promo__excellence.excellence
+        li.excellence__item Рекомендация терапевтов #1 при грыжах
+        li.excellence__item Натуральный органический состав
+        li.excellence__item Эффективность подтверждена клиниками Израиля и США
+    .promo__mid_wrapper
+      .promo__main_text
+        h2.promo__title.title Единственная альтернатива операции
+        h3.promo__subtitle.bold при грыжах брюшной стенки, паховой области и половых органов
+        ul.promo__support.support
+          li.support__item
             span.text__black.bold 
-              span.bg--line.bg--line__yellow Не допускает
+              span.bg__line.bg__line__yellow Не допускает
               |  операцию
             |  сводя к нулю риск ущемления грыжи
-          li.support--item
+          li.support__item
             span.text__black.bold
-              span.bg--line.bg--line__yellow Освобождает 
+              span.bg__line.bg__line__yellow Освобождает 
               |  от дискомфорта
             |  снижая боль, останавливая рост и уменьшая размер грыжи
-          li.support--item
+          li.support__item
             span.text__black.bold
-              span.bg--line.bg--line__yellow Помогает
+              span.bg__line.bg__line__yellow Помогает
               |  забыть о грыже
             |  защищая от развития заболеваний в ущемленных органах
-      .promo--product
+      .promo__product
         picture
           source(media="(max-width: 767px)", srcset="img/prod_mob.webp", type="image/webp")
           source(media="(max-width: 767px)", srcset="img/prod_mob.png")
           source(srcset="img/prod.webp", type="image/webp")
-          img.product--img(src="img/prod.png", alt="")
+          img.product__img(src="img/prod.png", alt="")
       include order
