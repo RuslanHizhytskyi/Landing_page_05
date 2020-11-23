@@ -188,6 +188,7 @@ button {
   box-shadow:
     0 5px 0 0 $orange-color,
     0 15px 15px -8px $orange-color;
+  cursor: pointer;
 
   &:hover,
   &:focus {
