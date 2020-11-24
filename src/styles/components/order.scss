@@ -5,6 +5,17 @@
   padding: 30px 20px 40px;
   background: #fff;
   border-radius: 6px;
+  @include rm(1360) {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 76px;
+      height: 287px;
+      right: -65px;
+      top: 160px;
+      background: url(../img/arrow__orange.png) no-repeat center center;
+    }
+  }
 
   &__discount {
     position: absolute;

@@ -8,9 +8,12 @@
   @include rm(1024) {
     position: relative;
     margin-bottom: 30px;
-    @include rm(1220) {
-      margin-bottom: 85px;
+    &:last-child {
+      padding-top: 50px;
     }
+  }
+  @include rm(1220) {
+    margin-bottom: 85px;
   }
 
   &__mid_wrapper {
@@ -175,6 +178,9 @@
     margin: 0 auto;
     @include rm(1220) {
       margin: 0 20px 0 0;
+    }
+    @include rm(1360) {
+      margin: 0;
     }
   }
 }

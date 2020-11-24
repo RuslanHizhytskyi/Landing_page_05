@@ -39,12 +39,20 @@
   .slick-next {
     top: 150px;
     right: -10px;
+    @include rm(1280) {
+      right: -45px;
+      top: 175px;
+    }
   }
   
   .slick-prev {
     top: 137px;
     left: -10px;
     transform: rotate(180deg);
+    @include rm(1280) {
+      left: -45px;
+      top: 162px;
+    }
   }
   .slick-dots {
     bottom: 0;
@@ -89,6 +97,11 @@
       flex-direction: row;
       text-align: left;
     }
+    @include rm(1280) {
+      align-items: flex-start;
+      padding: 30px 0 45px;
+      margin: 0;
+    }
   }
   &__img_wrapper {
     position: relative;
@@ -100,10 +113,20 @@
       height: 220px;
       margin: 0 20px 0 0;
     }
+    @include rm(1280) {
+      min-width: 470px;
+      height: auto;
+      padding: 0 0 40px;
+      margin: 0 auto 0 0;
+    }
     &:not([data-marker="before_after"]) {
       @include rm(1024) {
         min-width: 220px;
         height: 220px;
+      }
+      @include rm(1280) {
+        min-width: 370px;
+        padding: 0;
       }
     }
     
@@ -126,11 +149,17 @@
     &[data-marker="before_after"]::before {
       content: 'До';
       left: calc(50% - 144px);
+      @include rm(1280) {
+        left: calc(50% - 170px);
+      }
     }
     
     &[data-marker="before_after"]::after {
       content: 'После';
       right: calc(50% - 144px);
+      @include rm(1280) {
+        right: calc(50% - 170px);
+      }
     }
   }
   &__photo {
@@ -138,6 +167,9 @@
     @include rm(1024) {
       margin: auto;
       max-height: 220px;
+    }
+    @include rm(1280) {
+      max-height: none;
     }
   }
   &__name {

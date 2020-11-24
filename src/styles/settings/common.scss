@@ -126,7 +126,38 @@ button {
 }
 
 .bg {
+  position: relative;
   background: #f1f2f8;
+
+  @include rm(1024) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 60px;
+      left: 0;
+      background: url(../img/bg__line.png) no-repeat center center / 100% 100%;
+    }
+    &::before {
+      top: -30px;
+    }
+    &::after {
+      bottom: -30px;
+    }
+  }
+  @include rm(1220) {
+    &::before,
+    &::after {
+      height: 84px;
+    }
+    &::before {
+      top: -42px;
+    }
+    &::after {
+      bottom: -42px;
+    }
+  }
 }
 
 .bold {
