@@ -78,18 +78,21 @@
         height: 64px;
         left: 0;
         top: calc(50% - 32px);
+        @include rm(1220) {
+          width: 50px;
+        }
       }
       &:nth-child(1)::before {
         background: url(../img/excellence__01.png) no-repeat center center;
-        background-size: contain;
+        background-size: auto 38px;
       }
       &:nth-child(2)::before {
         background: url(../img/excellence__02.png) no-repeat center center;
-        background-size: contain;
+        background-size: auto 38px;
       }
       &:nth-child(3)::before {
         background: url(../img/excellence__03.png) no-repeat center center;
-        background-size: contain;
+        background-size: auto 38px;
       }
     }
   }
@@ -232,7 +235,7 @@
     position: relative;
     padding-left: 25px;
 
-    .bold {
+    .black {
       display: block;
       margin-bottom: 3px;
     }

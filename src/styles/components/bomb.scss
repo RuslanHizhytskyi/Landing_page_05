@@ -1,4 +1,7 @@
 .bomb {
+  @include rm(1220) {
+    padding-top: 60px;
+  }
   &__title {
     margin-bottom: 10px;
     @include rm(1024) {
@@ -113,8 +116,11 @@
           left: calc(50% - 45px);
         }
         @include rm(640) {
+          padding-bottom: 5px;
           left: 0;
-          top: calc(50% - 32px);}
+          top: calc(50% - 32px);
+          background-size: 100% 20px;
+        }
       }
     }
 
