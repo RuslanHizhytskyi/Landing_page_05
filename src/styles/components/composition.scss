@@ -46,6 +46,16 @@
     @include rm(1220) {
       position: relative;
       min-width: 470px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 505px;
+        height: 58px;
+        left: -45px;
+        bottom: -170px;
+        background: url(../img/line__white.png) no-repeat center bottom;
+        background-size: contain;
+      }
     }
   }
 
@@ -163,7 +173,7 @@
 
   &__button {
     display: block;
-    max-width: 220px;
+    max-width: 264px;
     margin: 0 auto;
   }
 

@@ -141,6 +141,12 @@
     @include rm(1220) {
       text-align: left;
     }
+    br {
+      display: none;
+      @include rm(1220) {
+        display: inline-block;
+      }
+    }
   }
 
   &__bottom {

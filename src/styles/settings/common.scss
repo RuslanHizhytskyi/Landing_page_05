@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   color:$blue-darck;
+  background: #000;
 }
 html{
   overflow-x: hidden;
@@ -127,7 +128,8 @@ button {
 
 .bg {
   position: relative;
-  background: #f1f2f8;
+  // background: #f1f2f8;
+  background: #000;
 
   @include rm(1024) {
     &::before,
@@ -205,9 +207,19 @@ button {
 }
 
 .bg__line__grey::after {
-  background: url(../img/line__grey.png) no-repeat center center;
-  background-size: 150px auto;
+  background: url(../img/line__grey.png) no-repeat left center;
+  background-size: 95% auto;
   transform: rotate(-4deg);
+}
+
+.bg__line__white::after {
+  @include rm(1024) {
+    width: 160px;
+    left: calc(50% - 80px);
+    background: url(../img/line__white.png) no-repeat top 30% center;
+    background-size: 100% auto;
+    transform: rotate(-4deg);
+  }
 }
 
 .btn {

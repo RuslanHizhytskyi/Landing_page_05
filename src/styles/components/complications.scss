@@ -84,6 +84,9 @@
 
   &__text {
     color: $grey-text-color;
+    @include rm(1220) {
+      padding: 0 6px;
+    }
 
     .text__blue {
       font-weight: 700;
