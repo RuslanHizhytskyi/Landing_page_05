@@ -88,7 +88,8 @@
         text-align: center;
       }
       @include rm(640) {
-        max-width: none;
+        max-width: 270px;
+        width: 100%;
         padding: 0 0 0 90px;
         margin-bottom: 30px;
         vertical-align: middle;
