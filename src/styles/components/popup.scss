@@ -1,0 +1,56 @@
+.popup {
+  width: 270px;
+  padding: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+  @include rm(1000) {
+    display: flex;
+    align-items: flex-end;
+    width: 750px;
+  }
+  &__product-wrapper {
+    display: none;
+    @include rm(1000) {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-right: auto;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 425px;
+        height: 625px;
+        bottom: 0;
+        left: 0;
+        background: url(../img/man_3.png) no-repeat left bottom;
+        border-bottom-left-radius: 6px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 500px;
+        height: 90px;
+        left: 5px;
+        bottom: -70px;
+        background: url(../img/line__grey.png) no-repeat left center;
+        background-size: contain;
+        transform: rotate(4deg);
+      }
+    }
+  }
+  &__product {
+    position: absolute;
+    z-index: 2;
+    max-width: 524px;
+    left: 0;
+    bottom: -40px;
+  }
+}
+
+.ever-popup {
+  background: rgba(244, 244, 244, 0.9) !important;
+}
+.ever-popup__close {
+  opacity: 0;
+}

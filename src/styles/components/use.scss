@@ -67,8 +67,23 @@
     position: relative;
     border-radius: 10px;
     border: 1px solid $grey-color-2;
+    @include rm(1220) {
+      background: #f9faff;
+      &::after {
+        position: absolute;
+        content: '';
+        left: 180px;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $grey-color-2;
+      }
+    }
     &:not(:last-child) {
       margin-bottom: 10px;
+      @include rm(1220) {
+        margin-bottom: 20px;
+      }
     }
     &::before {
       position: absolute;
@@ -90,6 +105,7 @@
         top: calc(50% - 40px);
         left: -80px;
         font-size: 80px;
+        text-shadow: 0 -4px 24px #b8bdd1;
       }
     }
   }

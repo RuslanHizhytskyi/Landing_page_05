@@ -32,6 +32,7 @@
       text-align: left;
     }
     @include rm(1220) {
+      max-width: 750px;
       margin-bottom: 30px;
       font-size: 32px;
     }

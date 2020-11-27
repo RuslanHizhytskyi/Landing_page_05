@@ -81,6 +81,16 @@
 
 .review {
   padding-bottom: 25px;
+  @include rm(768) {
+    padding-top: 15px;
+  }
+  @include rm(1220) {
+    padding-bottom: 55px;
+  }
+  @include rm(1280) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &__wrapper {
     display: flex;
@@ -92,10 +102,14 @@
       margin: 0 40px;
       background: #fff;
       border-radius: 16px;
+      box-shadow: 0 0 12px 4px $grey-color-2;
     }
     @include rm(1024) {
       flex-direction: row;
       text-align: left;
+    }
+    @include rm(1220) {
+      padding: 20px 0 35px;
     }
     @include rm(1280) {
       align-items: flex-start;
@@ -126,6 +140,7 @@
       }
       @include rm(1280) {
         min-width: 370px;
+        height: 100%;
         padding: 0;
       }
     }
@@ -199,5 +214,8 @@
   }
   &__text {
     font-size: 17px;
+    @include rm(1280) {
+      padding-right: 20px;
+    }
   }
 }

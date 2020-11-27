@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   color:$blue-darck;
-  background: #000;
+  // background: #000;
 }
 html{
   overflow-x: hidden;
@@ -128,8 +128,8 @@ button {
 
 .bg {
   position: relative;
-  // background: #f1f2f8;
-  background: #000;
+  background: #f1f2f8;
+  // background: #000;
 
   @include rm(1024) {
     &::before,
@@ -228,24 +228,24 @@ button {
   color: $black-color;
   border-radius: 30px;
   background: linear-gradient(to left, #fcd04d 0%, #ffde7d 50%, #fcd04d 100%);
-  box-shadow:
-    0 5px 0 0 $orange-color,
-    0 15px 15px -8px $orange-color;
+  border-bottom: 5px solid $orange-color;
+  box-shadow: 0 15px 15px -8px $orange-color;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    box-shadow: 0 5px 0 0 $orange-color;
+    box-shadow: none;
   }
   
   &:active {
-    box-shadow: none;
+    border-bottom: none;
+    margin-bottom: 5px;
   }
 
   &__biger_text {
     display: block;
     font-size: 30px;
-    line-height: 22px;
+    line-height: 25px;
   }
 
   &__smaller_text {

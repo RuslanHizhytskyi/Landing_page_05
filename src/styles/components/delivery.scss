@@ -61,6 +61,7 @@
   &__img {
     max-width: 200px;
     margin: 0 auto 10px;
+    border-radius: 50%;
     @include rm(480) {
       margin: 0 10px 0 0;
     }
@@ -93,9 +94,23 @@
     @include rm(1220) {
       font-size: 22px;
     }
+    &::after {
+      content: none;
+      @include rm(1220) {
+        content: '';
+        width: 80%;
+        left: 10%;
+      }
+    }
   }
   &__text {
     font-size: 17px;
+    br {
+      display: none;
+      @include rm(1220) {
+        display: inline-block;
+      }
+    }
   }
   &__arrow {
     @include rm(1024) {
