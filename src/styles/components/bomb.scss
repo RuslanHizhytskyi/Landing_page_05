@@ -63,7 +63,7 @@
       }
 
       &:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
       &:nth-child(1) .danger__img {
         max-width: 103.33%;
@@ -71,12 +71,19 @@
       &:nth-child(2) .danger__img {
         max-width: 108%;
       }
+      &:last-child {
+        @include r(479) {
+          & .danger__text {
+            margin-bottom: 30px;
+          }
+        }
+      }
     }
 
     &__text {
       position: relative;
       padding-left: 90px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       font-size: 17px;
       line-height: 20px;
       font-weight: 700;

@@ -96,9 +96,6 @@
     }
   }
 
-  &__text_wrapper {
-  }
-
   &__header {
     margin-bottom: 10px;
     color: $black-color;
@@ -167,10 +164,7 @@
       }
     }
     &__small {
-      font-size: 16px;
-      @include rm(640) {
-        font-size: 18px;
-      }
+      font-size: 18px;
       @include rm(1024) {
         font-size: 22px;
       }
