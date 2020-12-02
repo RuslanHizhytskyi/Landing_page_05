@@ -51,6 +51,13 @@
 .ever-popup {
   background: rgba(244, 244, 244, 0.9) !important;
 }
+.ever-popup.show {
+  overflow: hidden;
+}
 .ever-popup__close {
   opacity: 0;
+}
+
+.ever-popup__inner {
+  padding-bottom: 50px;
 }

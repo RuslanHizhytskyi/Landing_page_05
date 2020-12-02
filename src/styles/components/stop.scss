@@ -116,7 +116,7 @@
     @include rm(1220) {
       min-height: auto;
       margin-bottom: 30px;
-      text-align: left;
+      // text-align: left;
     }
 
     .text__orange {
@@ -136,7 +136,7 @@
       text-align: center;
     }
     @include rm(1220) {
-      text-align: left;
+      // text-align: left;
     }
     br {
       display: none;

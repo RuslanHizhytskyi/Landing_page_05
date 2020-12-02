@@ -208,14 +208,14 @@ button {
 
 .bg__line__grey::after {
   background: url(../img/line__grey.png) no-repeat left center;
-  background-size: 95% auto;
+  background-size: 90% 25px;
   transform: rotate(-4deg);
 }
 
 .bg__line__white::after {
   @include rm(1024) {
-    width: 160px;
-    left: calc(50% - 80px);
+    width: 180px;
+    left: calc(50% - 90px);
     background: url(../img/line__white.png) no-repeat top 30% center;
     background-size: 100% auto;
     transform: rotate(-4deg);

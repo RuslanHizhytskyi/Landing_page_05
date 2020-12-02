@@ -2,7 +2,7 @@
   position: relative;
   min-width: 270px;
   width: 270px;
-  padding: 30px 20px 40px;
+  padding: 30px 20px;
   background: #fff;
   border-radius: 6px;
   @include rm(1360) {
@@ -51,6 +51,7 @@
     max-width: 150px;
     margin: 0 auto 25px;
     text-align: center;
+    line-height: 1.2;
   }
 
   .price {
@@ -66,7 +67,7 @@
   }
 
   .form {
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
   }
 
   &__protect {

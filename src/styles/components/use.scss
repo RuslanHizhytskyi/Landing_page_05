@@ -1,5 +1,6 @@
 .use {
   &__title {
+    line-height: 1.1;
     margin-bottom: 15px;
     @include rm(1024) {
       text-align: left;
@@ -22,6 +23,9 @@
       align-items: center;
       justify-content: space-between;
     }
+    @include rm(1220) {
+      align-items: flex-end;
+    }
   }
   &__wrapper_left {
     display: flex;
@@ -31,6 +35,9 @@
     @include rm(1024) {
       min-width: 500px;
       align-items: flex-start;
+    }
+    @include rm(1220) {
+      margin-bottom: 0;
     }
   }
   &__wrapper--small {
@@ -169,6 +176,7 @@
         background: url(../img/use__04.png) no-repeat left 15px center / auto 60px;
       }
       @include rm(1220) {
+        padding-right: 40px;
         background: url(../img/use__04.png) no-repeat left 41px center / auto auto;
       }
     }
@@ -192,7 +200,7 @@
     margin-right: auto;
   }
   @include rm(1220) {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   &__item {
     &:not(:last-child) {
