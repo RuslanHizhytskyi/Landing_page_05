@@ -75,11 +75,12 @@ button {
   font-size: 26px;
   color:$black-color;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.1;
   text-align: center;
 
   @include rm(480) {
     font-size: 30px;
+    line-height: 1;
   }
 
   @include rm(640) {

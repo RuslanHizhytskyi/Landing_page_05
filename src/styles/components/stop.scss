@@ -6,6 +6,7 @@
 
   &__subtitle {
     margin-bottom: 20px;
+    font-size: 20px;
 
     @include rm(1024) {
       margin-bottom: 30px;
