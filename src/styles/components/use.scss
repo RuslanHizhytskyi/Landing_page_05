@@ -4,6 +4,7 @@
     margin-bottom: 15px;
     @include rm(1024) {
       text-align: left;
+      line-height: 1.1;
     }
     @include rm(1220) {
       margin-bottom: 45px;
@@ -130,9 +131,15 @@
       min-height: 155px;
       display: flex;
       align-items: center;
-      padding: 20px 45px 20px 225px;
+      justify-content: flex-start;
+      padding: 38px 45px 38px 225px;
       font-size: 24px;
       line-height: 26px;
+      span {
+        display: block;
+        width: 100%;
+        margin: auto 0;
+      }
     }
     &--1 {
       border-bottom: 1px solid $grey-color-2;
@@ -212,5 +219,16 @@
   }
   &__course {
     font-size: 17px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
+  @include rm(1220) {
+    .howuse__text--1 {
+      padding: 64px 45px 64px 225px;
+    }
+    .howuse__text--4 {
+      padding: 51px 38px 51px 225px;
+    }
   }
 }

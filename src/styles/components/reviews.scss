@@ -14,14 +14,16 @@
 
   .slick-next,
   .slick-prev {
-    z-index: 10;
+    z-index: 5;
     width: 0;
     height: 0;
+    overflow: visible;
     border: 17px solid transparent;
     border-left-color: #fff;
     &::before {
       position: absolute;
       opacity: 1;
+      z-index: 6;
       content: '';
       left: -13px;
       top: -8px;
@@ -80,6 +82,30 @@
     }
   }
 }
+
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//   .reviews {
+//     .slick-arrow {
+//       overflow: visible;
+//       &:after {
+//         position: absolute;
+//         opacity: 1;
+//         z-index: 12;
+//         content: '';
+//         left: -13px;
+//         top: -8px;
+//         width: 0;
+//         height: 0;
+//         border: 8px solid transparent;
+//         border-left-color: $grey-text-color;
+//       }
+//       &:hover:after,
+//       &:focus:after {
+//         border-left-color: $orange-color;
+//       }
+//     }
+//   }
+// }
 
 .review {
   padding-bottom: 25px;
