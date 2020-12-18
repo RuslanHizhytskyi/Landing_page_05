@@ -14,6 +14,11 @@
 
   &__subtitle {
     margin-bottom: 15px;
+    font-size: 20px;
+
+    @include rm(480) {
+      font-size: 22px;
+    }
     @include rm(1024) {
       margin-bottom: 30px;
     }
@@ -80,12 +85,12 @@
             margin-bottom: 30px;
           }
         }
-        @include rm(1220) {
-          & .danger__text {
-            padding-left: 85px;
-            margin-bottom: 50px;
-          }
-        }
+        // @include rm(1220) {
+        //   & .danger__text {
+        //     padding-left: 85px;
+        //     margin-bottom: 50px;
+        //   }
+        // }
       }
     }
 
@@ -161,12 +166,15 @@
   }
 
   &__bottom_text {
-    max-width: 700px;
+    max-width: 710px;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
     color: $black-color;
+    @include rm(480) {
+      font-size: 22px;
+    }
     @include rm(1024) {
       font-size: 26px;
     }

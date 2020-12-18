@@ -14,6 +14,12 @@
       align-items: flex-end;
     }
   }
+  &__wrapper_text {
+    margin-bottom: 10px;
+    @include rm(640) {
+      margin-bottom: 0;
+    }
+  }
   
   &__wrapper_doc {
     display: flex;
@@ -39,7 +45,7 @@
       left: calc(50% - 190px);
     }
     @include rm(1280) {
-      left: calc(50% - 200px);
+      // left: calc(50% - 175px);
     }
   }
   &__title {

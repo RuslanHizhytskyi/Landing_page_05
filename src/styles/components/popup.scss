@@ -1,7 +1,7 @@
 .popup {
   width: 270px;
   padding: 0;
-  background: #fff;
+  background: #fafafc;
   border-radius: 6px;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
   @include rm(1000) {
@@ -19,11 +19,11 @@
       &::before {
         position: absolute;
         content: '';
-        width: 545px;
-        height: 535px;
+        width: 445px;
+        height: 565px;
         bottom: 0;
         left: 0;
-        background: url(../img/man_2.png) no-repeat left bottom;
+        background: url(../img/man_3.png) no-repeat left bottom;
         border-bottom-left-radius: 6px;
       }
       &::after {
@@ -47,7 +47,10 @@
     bottom: -30px;
   }
   .order {
-    background: none;
+    background: #fff;
+    &__discount {
+      display: none;
+    }
   }
 }
 
@@ -58,7 +61,15 @@
   overflow: hidden;
 }
 .ever-popup__close {
-  opacity: 0;
+  &::before,
+  &::after {
+    height: 5px !important;
+    background: $orange-color !important;
+    border-radius: 3px;
+  }
+  @include rm(1000) {
+    right: -40px !important;
+  }
 }
 
 .ever-popup__inner {

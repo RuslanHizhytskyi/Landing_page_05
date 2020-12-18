@@ -215,7 +215,10 @@
     }
   }
   &__header {
-    font-size: 22px;
+    font-size: 20px;
+    @include rm(480) {
+      font-size: 22px;
+    }
   }
   &__course {
     font-size: 17px;
@@ -229,6 +232,9 @@
     }
     .howuse__text--4 {
       padding: 51px 38px 51px 225px;
+    }
+    .promo .excellence__item:first-child {
+      min-width: 227px;
     }
   }
 }

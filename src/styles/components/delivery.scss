@@ -86,7 +86,10 @@
     }
   }
   &__header {
-    font-size: 22px;
+    font-size: 20px;
+    @include rm(480) {
+      font-size: 22px;
+    }
     @include rm(1024) {
       margin-bottom: 15px;
       font-size: 21px;

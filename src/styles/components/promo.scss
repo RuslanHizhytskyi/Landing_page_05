@@ -121,8 +121,12 @@
 
   &__subtitle {
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    
+    @include rm(480) {
+      font-size: 22px;
+    }
 
     @include rm(640) {
       margin-bottom: 30px;

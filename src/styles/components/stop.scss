@@ -105,8 +105,11 @@
     margin-bottom: 10px;
     color: $black-color;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    @include rm(480) {
+      font-size: 22px;
+    }
     @include rm(640) {
       text-align: left;
     }
@@ -158,7 +161,10 @@
     text-align: center;
 
     &__big {
-      font-size: 22px;
+      font-size: 20px;
+      @include rm(480) {
+        font-size: 22px;
+      }
       @include rm(640) {
         font-size: 24px;
       }
