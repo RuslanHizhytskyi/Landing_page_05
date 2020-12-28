@@ -43,8 +43,7 @@
     right: -10px;
     @include rm(1280) {
       right: -45px;
-      top: 175px;
-      top: calc(50% - 15px);
+      top: 204px;
     }
   }
   
@@ -54,8 +53,7 @@
     transform: rotate(180deg);
     @include rm(1280) {
       left: -45px;
-      top: 162px;
-      top: calc(50% - 27px);
+      top: 191px;
     }
   }
   .slick-dots {

@@ -48,6 +48,12 @@
   }
   .order {
     background: #fff;
+    @include rm(1000) {
+      padding: 20px;
+      .order__pack {
+        margin-bottom: 15px;
+      }
+    }
     &__discount {
       display: none;
     }
